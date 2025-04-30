@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Login</title>
+    <script defer src="scripts/app.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            localStorage.setItem("role", "");
+        });
+    </script>
+  </head>
+  <body class="login">
+    <main>
+        <img src="assets/danissa_logo.png" alt="Website Logo" class="login-logo-img">
+        <div class="login-form">
+            <div class="login-form-box">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <input class="form-username" id ="login-username" type="text" placeholder="Username" required/>
+                    <input class="form-password" id="login-password" type="password" placeholder="Password" required />
+                    <button class="form-button" id="login-btn" type="submit" >Login</button>
+                </form>
+                <p style="margin-top: 15px;">
+                    Don't have an account? <a href="signup.html" id="sign-up" onclick="signup()" style="color: #007BFF; text-decoration: none;">Click here</a>
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+  </section>
